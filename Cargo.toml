@@ -1,0 +1,13 @@
+[package]
+name = "testing-rust-email-lambda"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lambda_http = "0.14.0"
+aws-sdk-dynamodb = "1.65.0"
+aws-config = "1.5.16"
+aws-sdk-ses = "1.62.0"
+uuid = { version = "1.13.1", features = [ "v4" ] }
+
+tokio = { version = "1", features = ["macros"] }
